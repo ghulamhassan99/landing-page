@@ -1,0 +1,1296 @@
+/* section four start  */
+:root {
+    --green: #b9ff66;
+    --dark: #191a23;
+    --light-grey: #f3f3f3;
+}
+
+/*  Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.equal{
+     width: 90%;
+    margin: auto;
+}
+
+/*--------------- nar bar create  ---------------------------*/
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #fff;
+    animation: slideDown 0.8s ease-out forwards;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-icon {
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    left: 18%;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+
+.nav-links a:hover {
+    color: #fa920b;
+}
+
+.btn-quote {
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-quote:hover {
+    background-color: #000;
+    color: #fff;
+}
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* -----------------------narbar end------------------------------ */
+
+/* ------------------------section one start ------------------------ */
+/* Hero Container */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px;
+    background-color: #ffffff;
+    gap: 40px;
+}
+
+/* Left Content Styling */
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    color: #333;
+}
+
+/* Button Styling */
+.btn-consultation {
+    background-color: #191a23;
+    color: #fff;
+    padding: 18px 35px;
+    border-radius: 12px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-consultation:hover {
+    background-color: #000;
+}
+
+/* Right Image Styling */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ------------------------section one end ------------------------ */
+
+/* ------------------------slider logo-----------------------------------  */
+.logo-slider {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background: white;
+    border-top: 2px solid #a855f7;
+
+}
+
+.logo-track {
+    display: flex;
+}
+
+.logo-track img {
+    width: 100px;
+    margin: 0 70px;
+    height: auto;
+    opacity: 1;
+}
+
+
+/*----------------------- section 3 start------------------  */
+.services-header {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    right: 6%;
+}
+
+.badge {
+    background-color: #b9ff66;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000000;
+    max-width: 500px;
+    margin: 0;
+}
+
+/* Mobile responsive ke liye */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+
+/* ------------------------section 4 start ---------------------------- */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    padding-block: 40px;
+
+}
+
+/* Card Base Styling */
+.service-card {
+    width: 47%;
+    border: 1px solid var(--dark);
+    border-radius: 40px;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 0px var(--dark);
+}
+
+.green-bg {
+    background-color: var(--light-grey);
+}
+
+.light-green-bg {
+    background-color: var(--green);
+}
+
+.dark-bg {
+    background-color: var(--dark);
+    color: white;
+}
+
+.highlight {
+    display: inline-block;
+    padding: 2px 20px;
+    border-radius: 7px;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.white-bg {
+    background-color: var(--green);
+    width: 300px;
+    color: black;
+}
+
+.dark-bg .white-bg {
+    background-color: white;
+}
+
+/* Learn More Link */
+.learn-more {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+
+.icon {
+    background-color: var(--dark);
+    color: var(--green);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.white-icon {
+    background-color: white;
+    color: var(--dark);
+}
+
+
+/*----------------- section five start  ------------------------*/
+
+
+.cta-card {
+
+    background-color: #f0f0f0;
+    /* Light grey background */
+    width: 100%;
+    max-width: 1500px;
+    padding: 0px 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin: 70px auto;
+}
+
+.cta-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.cta-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.cta-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #1a1a1b;
+    /* Dark button color */
+    color: white;
+    padding: 18px 35px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+.cta-illustration {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cta-illustration img {
+    max-width: 100%;
+    height: auto;
+}
+
+.holographic-card:hover {
+  transform: scale(0.3.05);
+  transition: all 2s;
+  box-shadow: 0 0 20px rgba(0,255,255,0.5);
+}
+
+.holographic-card:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+
+
+/*-------------------- section six start ------------------ */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    /* Vertical alignment */
+    gap: 30px;
+    /* Badge aur text ke darmiyan gap */
+}
+
+.badge {
+    background-color: #b9ff66;
+    /* Wahi neon green color jo image mein hai */
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    /* Ya koi bhi clean sans-serif font */
+}
+
+.description {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+/* ----------------------section seven start-----------------  */
+.case-studies-cards {
+    /* width: 100%; */
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    /* Bahar ka background white */
+}
+
+.cards-container {
+    background-color: #191a23;
+    border-radius: 40px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1400px;
+    margin: 0px auto;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 60px;
+}
+
+.card {
+    flex: 1;
+    padding: 10px 30px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Learn More Link */
+.learn-more {
+    color: #b9ff66;
+    /* Green color from previous section */
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.learn-more:hover {
+    opacity: 0.8;
+}
+
+.arrow {
+    font-size: 20px;
+}
+
+.separator {
+    width: 1px;
+    background-color: #fff;
+    margin: 0 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+    .cards-container {
+        flex-direction: column;
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    .separator {
+        width: 100%;
+        height: 1px;
+        margin: 20px 0;
+    }
+
+    .card {
+        padding: 10px 0;
+    }
+}
+
+/* ---------------section 8 start----------------------  */
+.header-container {
+    position: relative;
+    right: 5%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.green-badge {
+
+    background-color: #b9ff66;
+    color: #000;
+    padding: 2px 10px;
+    border-radius: 7px;
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.header-text {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.4;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+
+/* ---------------------section 9 start -------------------------- */
+.process-section {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.accordion-item {
+    background-color: #f3f3f3;
+    border: 1px solid #191a23;
+    border-radius: 40px;
+    box-shadow: 0 5px 0 #191a23;
+    /* Bottom shadow effect */
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+/* Jab item active ho (Open ho) */
+.accordion-item.active {
+    background-color: #b9ff66;
+    /* Green color */
+}
+
+.accordion-header {
+
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.number {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Plus/Minus Icon Design */
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    position: relative;
+    background-color: #f3f3f3;
+}
+
+.icon-circle::before,
+.icon-circle::after {
+    content: '';
+    position: absolute;
+    background-color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-circle::before {
+    width: 15px;
+    height: 2px;
+}
+
+/* Horizontal line */
+.icon-circle::after {
+    width: 2px;
+    height: 15px;
+    transition: 0.3s;
+}
+
+/* Vertical line */
+
+.accordion-item.active .icon-circle::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+    opacity: 0;
+    /* Plus ko Minus banane ke liye */
+}
+
+.accordion-content {
+    padding: 0 50px 30px 50px;
+    display: none;
+    /* Default band rahega */
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+.accordion-content hr {
+    border: 0.5px solid #000;
+    margin-bottom: 25px;
+}
+
+.accordion-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* section 10 start 
+ */
+.team-header {
+    position: relative;
+    left: 1%;
+    margin-top: 60px;
+    /* Pichle section se gap dene ke liye */
+}
+
+.header-container {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    /* Badge aur text ke darmiyan gap */
+}
+
+.green-badge {
+    background-color: #b9ff66;
+    color: #000;
+    padding: 2px 12px;
+    border-radius: 8px;
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.header-text {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 500px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Mobile Alignment */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .header-text br {
+        display: none;
+    }
+}
+
+/* section 11 start  */
+.team-section {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns for desktop */
+    gap: 30px;
+}
+
+.team-card {
+    background: #fff;
+    border: 1px solid #191a23;
+    border-radius: 40px;
+    padding: 35px;
+    box-shadow: 0 5px 0 #191a23;
+    /* Image jaisa shadow */
+    position: relative;
+}
+
+.card-top {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.image-frame {
+    width: 100px;
+    height: 100px;
+    background-color: #b9ff66;
+    /* Green background behind image */
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.info p {
+    font-size: 14px;
+    margin: 5px 0 0 0;
+}
+
+.linkedin-icon {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    background: #000;
+    color: #b9ff66;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.team-card hr {
+    border: 0.5px solid #191a23;
+    margin: 20px 0;
+}
+
+.bio {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* See All Team Button */
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.see-team-btn {
+    background-color: #191a23;
+    color: white;
+    padding: 15px 50px;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+/* Mobile View */
+@media (max-width: 992px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-container {
+        justify-content: center;
+    }
+}
+
+/* section 12 start  */
+.testimonials-header {
+    margin-top: 80px;
+    /* Pichle section se munasib fasla */
+    margin-bottom: 40px;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.green-badge {
+    background-color: #b9ff66;
+    /* Neon Lime Green */
+    color: #000;
+    padding: 2px 12px;
+    border-radius: 8px;
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    white-space: nowrap;
+    /* Text ko ek hi line mein rakhne ke liye */
+}
+
+.header-text {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 500px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        /* Mobile par left-aligned */
+        gap: 15px;
+    }
+
+    .header-text br {
+        display: none;
+    }
+}
+
+/* section 13 start  */
+.testimonials-section {
+    background-color: #191a23;
+    border-radius: 45px;
+    padding: 80px 40px;
+    max-width: 1400px;
+    margin: 40px auto;
+    overflow: hidden;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.testimonial-slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+    min-width: 60%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    position: relative;
+    right: 50%;
+}
+
+/* Speech Bubble Style */
+.bubble {
+    border: 1px solid #b9ff66;
+    /* Green border */
+    color: white;
+    padding: 35px;
+    border-radius: 40px;
+    position: relative;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Bubble Tail (Niche wala v-shape) */
+.bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+    background-color: #191a23;
+    border-right: 1px solid #b9ff66;
+    border-bottom: 1px solid #b9ff66;
+    transform: rotate(45deg);
+}
+
+.client-info {
+    width: 100%;
+    padding-left: 60px;
+}
+
+.name {
+    color: #b9ff66;
+    font-size: 20px;
+    margin: 0;
+}
+
+.role {
+    color: white;
+    margin: 5px 0 0 0;
+}
+
+/* Navigation Controls */
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dots {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #b9ff66;
+    /* Is star-shape effect ke liye aap SVG image use kar sakte hain */
+}
+
+/* section 14 start  */
+.contact-header {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.contact-header .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.contact-header .green-badge {
+    background-color: #b9ff66;
+    /* Neon Lime Green */
+    color: #000;
+    padding: 2px 12px;
+    border-radius: 8px;
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    white-space: nowrap;
+}
+
+.contact-header .header-text {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 400px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Mobile Alignment */
+@media (max-width: 768px) {
+    .contact-header .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .contact-header .header-text br {
+        display: none;
+    }
+}
+
+/* section 15 start  */
+.contact-section {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.contact-container {
+    background-color: #f3f3f3;
+    /* Light grey background */
+    border-radius: 40px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    padding: 60px;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 550px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    gap: 10px;
+}
+
+/* Custom Radio Button Style */
+.radio-container input {
+    display: none;
+}
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.radio-container input:checked+.checkmark::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: #b9ff66;
+    /* Green dot */
+    border-radius: 50%;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #000;
+    border-radius: 12px;
+    background: #fff;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #191a23;
+    color: white;
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Right Side Illustration Area */
+.contact-decoration {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* In elements ko image ke mutabiq adjust karein */
+.star-black {
+    font-size: 150px;
+    color: #191a23;
+    position: absolute;
+    right: 50px;
+}
+
+.star-green {
+    font-size: 100px;
+    color: #b9ff66;
+    position: absolute;
+    right: 150px;
+    bottom: 100px;
+}
+
+/* Mobile View */
+@media (max-width: 900px) {
+    .contact-container {
+        padding: 30px;
+    }
+
+    .contact-decoration {
+        display: none;
+    }
+
+    /* Mobile par design hide kar diya */
+    .contact-form {
+        max-width: 100%;
+    }
+}
+
+.main-footer {
+    background-color: #191a23;
+    color: white;
+    padding: 60px 20px 30px 20px;
+    border-radius: 45px 45px 0 0;
+    max-width: 1400px;
+    margin: 60px auto 0 auto;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    background: white;
+    color: #191a23;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* Middle Section */
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-badge {
+    background-color: #b9ff66;
+    color: black;
+    padding: 2px 8px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.newsletter-box {
+    background-color: #292a32;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.newsletter-box input {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 12px 20px;
+    color: white;
+    width: 250px;
+}
+
+.subscribe-btn {
+    background-color: #b9ff66;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 30px 0;
+}
+
+.footer-bottom {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+
+    .footer-top,
+    .footer-middle,
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .newsletter-box {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .newsletter-box input {
+        width: 100%;
+    }
+}
